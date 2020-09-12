@@ -1,39 +1,49 @@
+/* Comman Property */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-header{
+
+/* Header Navbar */
+nav{
+    width: 100%;
     display: flex;
-    top: 0;
     position: fixed;
-}
-header>div{
-    flex: 2;
     text-align: center;
-    margin-top: 2%;
+    background-color: gray;
+    overflow: hidden;
+}
+nav>div{
+    flex: 1;
+    margin-top: 2vh;
+}
+header>nav{
+    text-align: center;
 }
 #header-img{
     width: 60%;
-}
-#header>ul{  
-    list-style-type: none;
-    text-align: center;
+    height:inherit;
+    margin-top: -0.5vh;
 }
 .nav-link{
     text-decoration: none;
     margin-left: 4%;
     color: Black;
 }
-.header>ul>li{
-    display: inline;
-    text-align: center;
-}
+
+/* Form */
+
 #form>label>h2,#form>input{    
     margin-top: 2%;
     margin-bottom: 1%;
     box-sizing: border-box;
+}
+#email{
+    width: 30vw;
+    height: 3vh;
+    padding: 1%;
 }
 #submit{    
     background-color: #f1c40f;
@@ -42,12 +52,14 @@ header>div{
     padding: 1% 2%;
 }
 #form{
-    padding-top: 6%;
+    padding-top: 10vh;
     padding-bottom: 5%;
     text-align: center;
     width: 60%;
     margin: auto;
 }
+
+/* Features Section */
 .icon{
     text-align: center;
     color:darkorange;
@@ -60,4 +72,77 @@ header>div{
     grid-template-columns: 20% 70%;
     text-align: center;
     padding: 2%;
+}
+
+/* HOw IT Work Section */
+main>div{
+    text-align: center;
+}
+#video{
+    width:65%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/*  Pricing Section */
+#Pricing{
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.grid-container{
+    border: 1px solid black;
+    margin-right: -32px;
+    margin-left: 22%;
+}
+.top{
+    width: inherit;
+    height: 4vh;
+    padding-top: 1vh;
+    text-align: center;
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+.meddle{
+    text-align: center;
+}
+.meddle>p,.meddle>h2{
+    margin: 2vh;
+}
+.bottom{
+    text-align: center;
+    margin: 2vh auto;
+}
+.bottom>input{
+    text-align: center;
+    margin: 2vh auto;
+    border: none;
+    background-color: darkorange;
+    padding: 3% 4%;
+    font-size: 20px;
+}
+/* footer */
+#footer{
+    background-color: lightgray;
+    height: 8vh;
+    padding-right: 1vw;
+    line-height: 1.5em;
+    text-align: right;
+}
+#footer>div{
+    margin-top: 2.5%;
+    display: inline-block;
+}
+#footer>div>a{
+    text-decoration: none;
+    margin-left: 4%;
+    color: Black;
+}
+/* media Query */
+@media(min-width:40%) {
+    #Pricing{
+        margin-bottom: 10vh;
+        display: grid;
+        grid-template-columns: 70%;
+    }
 }

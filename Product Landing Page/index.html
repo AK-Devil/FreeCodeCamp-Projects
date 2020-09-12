@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,125 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <header id="header">
-        <div>
-            <nav id="nav-bar">
+        <nav id="nav-bar">
+            <div>
                 <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo" id="header-img">
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">How It Works</a>
-                <a class="nav-link" href="#">Pricing</a>
-            </nav>
-        </div>
-        <div>
-            <ul>
-                <li><a class="nav-link" href="#Features">Features</a></li>
-                <li><a class="nav-link" href="#How_It_Works">How It Works</a></li>
-                <li><a class="nav-link" href="#Pricing">Pricing</a></li>
-            </ul>
-        </div>
+            </div>
+            <div>
+                <a class="nav-link" href="#Features">Features</a>
+                <a class="nav-link" href="#How_It_Works">How It Works</a>
+                <a class="nav-link" href="#Pricing">Pricing</a>
+            </div>
+        </nav>
     </header>
     <main id="main">
-            <form action=" https://www.freecodecamp.com/email-submit" id="form">
-                <label for="email"><h2>Handcrafted, home-made masterpieces</h2></label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
-                <br><input type="submit" id="submit" value="GET STARTED">
-            </form>
-            <section id="features">
-                    <div class="sub-section">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-fire"></i>
-                        </div>
-                        <div class="describe">
-                            <h2>Premium Materials</h2>
-                            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase</p>
-                        </div>
-                    </div>
-                    <div class="sub-section">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-truck"></i>
-                        </div>
-                        <div class="describe">
-                            <h2>Fast Shipping</h2>
-                            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-                        </div>
-                    </div>
-                    <div class="sub-section">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-                        </div>
-                        <div class="describe">
-                            <h2>Quality Assurance</h2>
-                            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-                        </div>
-                    </div>
-            </section>
-            <Section id="How_It_Works"></Section>
-            <Section id="Pricing"></Section>
-        </main>
+        <form action=" https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email">
+                <h2>Handcrafted, home-made masterpieces</h2>
+            </label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+            <br>
+            <input type="submit" id="submit" value="GET STARTED">
+        </form>
+        <section id="features">
+            <div class="sub-section">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="describe">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase</p>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="icon">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="describe">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <div class="describe">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+        <div id="How_It_Works">
+            <video id="video" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <section id="Pricing">
+            <div class="grid-container">
+                <div class="top">
+                    <h3>TENOR TROMBONE</h3>
+                </div>
+                <div class="meddle">
+                    <h2>$600</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                </div>
+                <div class="bottom">
+                    <input type="submit" class="Select" value="Select">                    
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="top">
+                    <h3>BASS TROMBONE</h3>
+                </div>
+                <div class="meddle">
+                    <h2>$900</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                </div>
+                <div class="bottom">
+                    <input type="submit" class="Select" value="Select">                    
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="top">
+                    <h3>VALVE TROMBONE</h3>
+                </div>
+                <div class="meddle">
+                    <h2>$1200</h2>
+                    <p>Plays similar to a Trumpet</p>
+                    <p>Great for Jazz Bands</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                </div>
+                <div class="bottom">
+                    <input type="submit" class="Select" value="Select">                    
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div id="footer-div">
+                <a href="#" id="Privacy">Privacy</a>
+                <a href="#" id="Terms">Terms</a>
+                <a href="#" id="Contact">Contact</a>
+                <p>Copyright 2016, Original Trombones</p>
+            </div>
+        </footer>
+    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
